@@ -70,7 +70,7 @@ PlantTreatmonty is a Flutter-based mobile application designed to help users ide
 
 ---
 
-## 🤖 Technical Details
+## 🔥 Technical Details
 
 - **Flutter Framework**: A cross-platform UI toolkit to build the app for both Android and iOS.
 - **Firebase Authentication**: Manages user authentication securely.
