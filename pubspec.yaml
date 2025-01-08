@@ -41,6 +41,9 @@ dependencies:
   rounded_loading_button: ^2.1.0
   animate_do: ^3.0.2
   google_fonts: ^6.2.1
+  provider: ^6.0.5
+
+
 
 
 
@@ -83,8 +86,8 @@ flutter:
     - assets/profile.png
     - assets/homeScreen.png
     - assets/sign_up.png
-    - assets/animations/
     - assets/google_logo.png
+    - assets/model/eff.tflite
   fonts:
     - family: Lobster
       fonts:

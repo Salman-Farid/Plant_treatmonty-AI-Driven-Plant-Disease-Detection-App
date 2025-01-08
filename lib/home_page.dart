@@ -6,15 +6,21 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:lottie/lottie.dart';
-
+import 'package:plant_treatmonty/services/auth_service.dart';
 import 'display_image_page.dart';
 import 'feedback_page.dart';
-import 'login_page.dart';
+import 'screens/login_page.dart';
+
+
+
+
+
+
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
 }
+final AuthService _authService = AuthService();
 
 class _HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
@@ -250,7 +256,7 @@ class _HomePageState extends State<HomePage>
             onPressed: () async {
               await FirebaseAuth.instance.signOut();
               Navigator.of(context).pushReplacement(
-                MaterialPageRoute(builder: (context) => LoginPage()),
+                MaterialPageRoute(builder: (context) => LoginPage(authService: _authService,)),
               );
             },
           ),
